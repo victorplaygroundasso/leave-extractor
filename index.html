@@ -2,67 +2,72 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Leave Extractor – Setup</title>
+<title>Leave Extractor</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f0f4f8; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; }
-  .card { background: white; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,.1); max-width: 560px; width: 100%; overflow: hidden; }
-  .header { background: #1F4E79; color: white; padding: 28px 32px; }
-  .header h1 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
-  .header p { font-size: 13px; opacity: .75; }
-  .body { padding: 32px; }
-  .warning { background: #FEF3C7; border: 1.5px solid #F59E0B; border-radius: 10px; padding: 14px 16px; margin-bottom: 28px; display: flex; gap: 12px; }
-  .warning p { font-size: 13px; color: #92400E; line-height: 1.5; }
-  .warning strong { display: block; font-size: 14px; }
-  .step { display: flex; gap: 16px; margin-bottom: 24px; }
-  .num { width: 28px; height: 28px; border-radius: 50%; background: #1F4E79; color: white; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .step h3 { font-size: 14px; font-weight: 600; }
-  .step p { font-size: 13px; color: #64748b; line-height: 1.5; }
-  .drag-box { background: #EFF6FF; border: 2px dashed #3B82F6; border-radius: 10px; padding: 20px; text-align: center; margin: 12px 0 0; }
-  a.bm { display: inline-block; background: #1F4E79; color: white !important; text-decoration: none; padding: 11px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: grab; }
-  .drag-arrow { font-size: 13px; color: #3B82F6; font-weight: 600; margin-top: 10px; }
-  .divider { border: none; border-top: 1px solid #e2e8f0; margin: 28px 0; }
-  .monthly { background: #F0FDF4; border-radius: 10px; padding: 16px 20px; }
-  .monthly h3 { font-size: 14px; font-weight: 600; color: #166534; margin-bottom: 10px; }
-  .monthly ol { padding-left: 18px; }
-  .monthly li { font-size: 13px; color: #166534; line-height: 1.8; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f0f4f8;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+.card{background:white;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.1);max-width:560px;width:100%;overflow:hidden}
+.hdr{background:#1F4E79;color:white;padding:28px 32px}
+.hdr h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.hdr p{font-size:13px;opacity:.75}
+.body{padding:32px}
+.warn{background:#FEF3C7;border:1.5px solid #F59E0B;border-radius:10px;padding:14px 16px;margin-bottom:28px;display:flex;gap:12px}
+.warn p{font-size:13px;color:#92400E;line-height:1.5}
+.warn strong{display:block;font-size:14px;margin-bottom:2px}
+.step{display:flex;gap:16px;margin-bottom:24px}
+.num{width:28px;height:28px;border-radius:50%;background:#1F4E79;color:white;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step h3{font-size:14px;font-weight:600;margin-bottom:3px}
+.step p{font-size:13px;color:#64748b;line-height:1.5}
+.box{background:#EFF6FF;border:2px dashed #3B82F6;border-radius:10px;padding:20px;text-align:center;margin:12px 0 0}
+.box p{font-size:12px;color:#64748b;margin-bottom:12px}
+a.bm{display:inline-block;background:#1F4E79;color:white!important;text-decoration:none;padding:11px 22px;border-radius:8px;font-weight:700;font-size:15px;cursor:grab}
+.arr{font-size:13px;color:#3B82F6;font-weight:600;margin-top:10px}
+hr{border:none;border-top:1px solid #e2e8f0;margin:28px 0}
+.green{background:#F0FDF4;border-radius:10px;padding:16px 20px}
+.green h3{font-size:14px;font-weight:600;color:#166534;margin-bottom:10px}
+.green ol{padding-left:18px}
+.green li{font-size:13px;color:#166534;line-height:1.8}
 </style>
 </head>
 <body>
 <div class="card">
-  <div class="header">
+  <div class="hdr">
     <h1>&#128202; Leave Extractor &#8212; One-time setup</h1>
     <p>Payroll Mauritius &middot; All employees &middot; Last 3 completed months</p>
   </div>
   <div class="body">
-    <div class="warning">
+    <div class="warn">
       <div>&#9888;&#65039;</div>
-      <p><strong>Do NOT click the button below directly.</strong> Drag it to your bookmarks bar first, then click it while logged into the payroll site.</p>
+      <p><strong>Do NOT click the button below directly.</strong>
+      Drag it to your bookmarks bar first, then click it while logged into the payroll site.</p>
     </div>
     <div class="step">
       <div class="num">1</div>
-      <div><h3>Show your bookmarks bar</h3><p>In Chrome: <strong>View &rarr; Show Bookmarks Bar</strong> (or Cmd+Shift+B on Mac).</p></div>
+      <div>
+        <h3>Show your bookmarks bar</h3>
+        <p>In Chrome: <strong>View &rarr; Show Bookmarks Bar</strong> (or Cmd+Shift+B on Mac).</p>
+      </div>
     </div>
     <div class="step">
       <div class="num">2</div>
       <div>
         <h3>Drag this button to the bookmarks bar</h3>
-        <p>Click and hold, drag up to the bookmarks bar, then release.</p>
-        <div class="drag-box">
-          <p>&#128071; Drag this to your bookmarks bar</p>
-          <a class="bm" href="javascript:(function(){var s=document.createElement('script');s.src='https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js';s.onload=function(){if(!window.location.hostname.includes('payrollmauritius.com')){alert('Please click this bookmark while on app.payrollmauritius.com');return;}var tokenRaw=localStorage.getItem('auth_app_token');if(!tokenRaw){alert('Not logged in - please log into Payroll Mauritius first.');return;}var token=JSON.parse(tokenRaw).value;var headers={'Authorization':'Bearer '+token};var today=new Date();var months=[];for(var i=3;i>=1;i--){var d=new Date(today.getFullYear(),today.getMonth()-i,1);months.push({year:d.getFullYear(),month:d.getMonth(),label:d.toLocaleString('en-US',{month:'long'})+' '+d.getFullYear()});}var startDate=months[0].year+'-'+String(months[0].month+1).padStart(2,'0')+'-01';var lastM=months[months.length-1];var endD=new Date(lastM.year,lastM.month+1,1);var endDate=endD.getFullYear()+'-'+String(endD.getMonth()+1).padStart(2,'0')+'-01';var overlay=document.createElement('div');overlay.id='pe-overlay';overlay.style='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:99999;display:flex;align-items:center;justify-content:center;';overlay.innerHTML='<div style="background:white;border-radius:16px;padding:32px;min-width:320px;font-family:sans-serif;text-align:center;"><div style="font-size:36px;margin-bottom:12px">&#128202;</div><div style="font-weight:700;font-size:18px;color:#1F4E79;margin-bottom:8px">Leave Extractor</div><div id="pe-status" style="color:#64748b;font-size:14px;margin-bottom:16px">Starting...</div><div style="background:#e2e8f0;border-radius:99px;height:8px;overflow:hidden"><div id="pe-bar" style="height:100%;background:#1F4E79;width:0%;transition:width .4s"></div></div></div>';document.body.appendChild(overlay);var setStatus=function(msg,pct){document.getElementById('pe-status').textContent=msg;if(pct!==undefined)document.getElementById('pe-bar').style.width=pct+'%';};var LABEL={'teletravail':'Télétravail','local_asso':'Local Leaves','sick':'Sick Leaves','half.sick':'Sick (half-day)'};(async function(){try{setStatus('Fetching employees...',5);var empData=await fetch('/api/employeeapp/myteam?page=1&limit=100&showAll=0',{headers:headers}).then(function(r){return r.json();});var employees=empData.data;setStatus('Found '+employees.length+' employees',10);var rows=[];for(var i=0;i<employees.length;i++){var emp=employees[i];setStatus('['+(i+1)+'/'+employees.length+'] '+emp.firstname+' '+emp.lastname,10+Math.round(80*(i/employees.length)));var calData=await fetch('/api/employeeapp/calendar/'+emp.id+'?start='+startDate+'&end='+endDate,{headers:headers}).then(function(r){return r.json();});for(var m=0;m<months.length;m++){var mo=months[m];var row={Employee:emp.firstname+' '+emp.lastname,Period:mo.label,'Télétravail':0,'Local Leaves':0,'Sick Leaves':0,'Sick (half-day)':0};for(var di=0;di<(calData.data||[]).length;di++){var day=calData.data[di];var dt=new Date(day.work_date);if(dt.getFullYear()===mo.year&&dt.getMonth()===mo.month){var lbl=LABEL[day.work_leave];if(lbl)row[lbl]++;}}rows.push(row);}}setStatus('Building Excel...',92);var wb=XLSX.utils.book_new();for(var m=0;m<months.length;m++){var mo=months[m];var sheetRows=rows.filter(function(r){return r.Period===mo.label;}).map(function(r){return{Employee:r.Employee,'Télétravail':r['Télétravail'],'Local Leaves':r['Local Leaves'],'Sick Leaves':r['Sick Leaves'],'Sick (half-day)':r['Sick (half-day)']};});var ws=XLSX.utils.json_to_sheet(sheetRows);ws['!cols']=[{wch:36},{wch:14},{wch:14},{wch:13},{wch:15}];XLSX.utils.book_append_sheet(wb,ws,mo.label.slice(0,31));}XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),'All Months');var fname='leaves_'+months.map(function(m){return m.label.replace(' ','');}).join('_')+'.xlsx';setStatus('Done! Downloading...',100);XLSX.writeFile(wb,fname);setTimeout(function(){document.getElementById('pe-overlay').remove();},2000);}catch(e){setStatus('Error: '+e.message);}})();};;document.head.appendChild(s);})();">&#128202; Extract Leaves</a>
-          <p class="drag-arrow">&#8593; drag me up to the bookmarks bar</p>
+        <p>Click and hold, drag it up to the bookmarks bar, release.</p>
+        <div class="box">
+          <p>&#128071; Drag this up to your bookmarks bar</p>
+          <a class="bm" href="javascript:(function(){var s=document.createElement('script');s.src='https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js';s.onload=function(){if(!location.hostname.includes('payrollmauritius.com')){alert('Please click this bookmark while on app.payrollmauritius.com');return;}var raw=localStorage.getItem('auth_app_token');if(!raw){alert('Not logged in - please log into Payroll Mauritius first.');return;}var token=JSON.parse(raw).value;var heads={'Authorization':'Bearer '+token};var today=new Date();var months=[];for(var i=3;i>=1;i--){var d=new Date(today.getFullYear(),today.getMonth()-i,1);months.push({year:d.getFullYear(),month:d.getMonth(),label:d.toLocaleString('en-US',{month:'long'})+' '+d.getFullYear()});}var s0=months[0].year+'-'+String(months[0].month+1).padStart(2,'0')+'-01';var lm=months[2];var ed=new Date(lm.year,lm.month+1,1);var e0=ed.getFullYear()+'-'+String(ed.getMonth()+1).padStart(2,'0')+'-01';var ov=document.createElement('div');ov.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:99999;display:flex;align-items:center;justify-content:center;';var bx=document.createElement('div');bx.style.cssText='background:white;border-radius:16px;padding:32px;min-width:320px;font-family:sans-serif;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.2);';bx.innerHTML='<div style='font-size:36px;margin-bottom:12px'>&#128202;</div><div style='font-weight:700;font-size:18px;color:#1F4E79;margin-bottom:8px'>Leave Extractor</div><div id='pes' style='color:#64748b;font-size:14px;margin-bottom:16px'>Starting...</div><div style='background:#e2e8f0;border-radius:99px;height:8px;overflow:hidden'><div id='peb' style='height:100%;background:#1F4E79;width:0%;transition:width .4s'></div></div>';ov.appendChild(bx);document.body.appendChild(ov);var ss=function(m,p){document.getElementById('pes').textContent=m;if(p!==undefined)document.getElementById('peb').style.width=p+'%';};var LB={'teletravail':'Teletravail','local_asso':'Local Leaves','sick':'Sick Leaves','half.sick':'Sick (half-day)'};(async function(){try{ss('Fetching employees...',5);var ed2=await fetch('/api/employeeapp/myteam?page=1&limit=100&showAll=0',{headers:heads}).then(function(r){return r.json();});var emps=ed2.data;ss('Found '+emps.length+' employees',10);var rows=[];for(var i=0;i<emps.length;i++){var emp=emps[i];ss('['+(i+1)+'/'+emps.length+'] '+emp.firstname+' '+emp.lastname,10+Math.round(80*i/emps.length));var cd=await fetch('/api/employeeapp/calendar/'+emp.id+'?start='+s0+'&end='+e0,{headers:heads}).then(function(r){return r.json();});for(var m=0;m<months.length;m++){var mo=months[m];var row={Employee:emp.firstname+' '+emp.lastname,Period:mo.label,Teletravail:0,'Local Leaves':0,'Sick Leaves':0,'Sick (half-day)':0};for(var di=0;di<(cd.data||[]).length;di++){var day=cd.data[di];var dt=new Date(day.work_date);if(dt.getFullYear()===mo.year&&dt.getMonth()===mo.month){var lb=LB[day.work_leave];if(lb)row[lb]++;}}rows.push(row);}}ss('Building Excel...',92);var wb=XLSX.utils.book_new();for(var m=0;m<months.length;m++){var mo=months[m];var sr=rows.filter(function(r){return r.Period===mo.label;}).map(function(r){return{Employee:r.Employee,Teletravail:r.Teletravail,'Local Leaves':r['Local Leaves'],'Sick Leaves':r['Sick Leaves'],'Sick (half-day)':r['Sick (half-day)']};});var ws=XLSX.utils.json_to_sheet(sr);ws['!cols']=[{wch:36},{wch:14},{wch:14},{wch:13},{wch:15}];XLSX.utils.book_append_sheet(wb,ws,mo.label.slice(0,31));}XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),'All Months');XLSX.writeFile(wb,'leaves_'+months.map(function(m){return m.label.replace(' ','');}).join('_')+'.xlsx');ss('Done! Downloading...',100);setTimeout(function(){ov.remove();},2000);}catch(e){ss('Error: '+e.message);}})();};document.head.appendChild(s);})();">&#128202; Extract Leaves</a>
+          <p class="arr">&#8593; drag me to the bookmarks bar</p>
         </div>
       </div>
     </div>
-    <hr class="divider">
-    <div class="monthly">
+    <hr>
+    <div class="green">
       <h3>&#9989; Every month &#8212; what the operational person does</h3>
       <ol>
         <li>Go to <strong>app.payrollmauritius.com</strong> and log in</li>
         <li>Click <strong>&#128202; Extract Leaves</strong> in the bookmarks bar</li>
         <li>Wait ~15 seconds for the progress bar</li>
-        <li>Excel file downloads automatically</li>
+        <li>Excel file downloads automatically to Downloads folder</li>
       </ol>
     </div>
   </div>
